@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Lone Star Justice Alliance</title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
@@ -14,49 +14,79 @@
         <h4 class="columnMiddle">LONE STAR JUSTICE ALLIANCE</h4>
     </div>
     <div class="columnRight">
-        <input type="text" placeholder="search">
+        <input type="text" placeholder="Search">
     </div>
 </header>
  
-    <nav class="navbar">
-            <ul>
-                <li><a href='#'>HOME</a></li>
-                <li><a href='#'>ABOUT</a></li>
-                <li><a href='#'>OUR WORK</a></li>
-                <li><a href='#'>NEWS</a></li>
-                <li><a href='#'>SUPPORT</a></li>
-                <li><a href='#'>JOBS</a></li>
-                <li><a href='#'>CONTACT</a></li>
-            </ul>
+    <nav class="navbar flex">
+        <button class="drop1">HOME</button>
+        <div class="dropdown">
+            <button class="drop">ABOUT</button>
+            <div class="dropdown-content">
+              <a href="#">Board of Directors</a>
+              <a href="#">Our Team</a>
+              <a href="#">Financials</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="drop">OUR WORK</button>
+            <div class="dropdown-content">
+                <a href="#">Juvenile Sentencing</a>
+                <a href="#">Reimagine Justice</a>
+                <a href="#">Survivors' Project</a>
+                <a href="#">Transformative Justice</a>
+                <a href="#">Reports</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="drop">NEWS</button>
+            <div class="dropdown-content">
+                <a href="#">COVID-19</a>
+                <a href="#">In the Community</a>
+                <a href="#">Awards</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="drop">SUPPORT</button>
+            <div class="dropdown-content">
+                <a href="#">AmazonSmile</a>
+                <a href="#">Donate</a>
+                <a href="#">Volunteer</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="drop">JOBS</button>
+            <div class="dropdown-content">
+                <a href="#">Internship</a>
+                <a href="#">Careers</a>
+            </div>
+        </div>
+        <button class="drop1">CONTACT</button>
     </nav>
    
         <div id="hero"> 
             <div class="getInvolvedContainer">
-                <h1>
-                    GET INVOLVED
-                </h1>
+               <!--  My UX Skills section coded using CSS flex -->
+                <div class="flexContainer">
+                    <div class="box1">
+                        <a href="#"><span class="dot"><p>AmazonSmile</p></span></a>
+                    </div>
+                    <div class="box2">
+                        <a href="#"><span class="dot1"><p>Donate</p></span></a>
+                     
+                    </div>
+                    <div class="box3">
+                        <a href="#"><span class="dot2"><p>Volunteer</p></span></a>
+                    
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!--  My UX Skills section coded using CSS flex -->
-        <div class="flexContainer">
-            <div class="box1">
-                <img src="Images/AmazonSmile.png">
-                <button class="button1"><a href='#'>AmazonSmile</a></button>
-            </div>
-            <div class="box2">
-                <img src="Images/Donate.png">
-                <button class="button1"><a href='#'>Donate</a></button>
-            </div>
-            <div class="box3">
-                <img src="Images/Volunteer.png">
-                <button class="button1"><a href='#'>Volunteer</a></button>
-            </div>
-        </div>
 
         <div class="flexContainer2"> 
             <div class="mission">
-                <img class="resize" src="Images/Mission.jpeg">
+                <img class="resize" src="Images/Mission.jpg">
             </div>
             <div class="missionWords">
                 <h2>MISSION STATEMENT</h2>
@@ -111,14 +141,15 @@
             <div class="container3">
                 <h3>RESILIENCE FUND RECIPIENT</h3>
                 <p>LSJA is proud to announce we've been selected for a grant from the Resilience Fund at Texas Women's Foundation (TXWF)</p>
-                <p>To learn more about Texas Women's Foundation click <span style="color:#c23b3b">here</span>. </p>
+                <p>To learn more about Texas Women's Foundation click <a href="#"><span style="color:#c23b3b">here</span></a>. </p>
                 <br>
-                <br>
-                <br>
+                <div class="buttonContainer">
+                    <button class="buttonRead"><a href='#'>Read More</a></button>
+                </div>
             </div>
     
             <div class="side2">
-                <img class="Aspen" src="Images/Aspen.png">
+                <img class="Aspen" src="Images/Aspen.jpg">
             </div>
             <div class="container3">
                 <h3>INVITATION TO THE ASPEN INSTITUTE</h3>
@@ -148,5 +179,7 @@
             </div>
         </div>
     </footer>
-<script src="JS/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="JS/index.js">
+    </script>
 </html>

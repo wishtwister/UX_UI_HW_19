@@ -37,16 +37,103 @@
         text-align: left;
         justify-content: space-around;
     }
+    .navbar{
+        display:none !important;
+    }
 }
 
 @media only screen and (max-width: 1400px){
     .navbar{
-        display: none;
+        display: none !important;
     }
     .main-header{
         flex-direction: column;
         text-align: center;
     }
+
+    .container h5{
+        display:none;
+    }
+}
+
+.dot{
+        height: 199px;
+        width: 199px;
+        background-color: white;
+        border-style: solid;
+        border-color: #074a7b;
+        border-radius: 50%;
+        display: inline-block;
+        color: #c23b3b;
+}
+
+
+.dot p{
+    text-align: center;
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+.dot1{
+    height: 199px;
+    width: 199px;
+    background-color: #c23b3b;
+    border-style: solid;
+    border-color: #074a7b;
+    border-radius: 50%;
+    display: inline-block;
+    color: white;
+}
+
+.dot1 p{
+    text-align: center;
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+.dot2{
+    height: 199px;
+    width: 199px;
+    background-color: white;
+    border-style: solid;
+    border-color: #074a7b;
+    border-radius: 50%;
+    display: inline-block;
+    color: #c23b3b;
+}
+.dot2 p{
+    text-align: center;
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+
+.tab-border{
+    background-image:url("../UX_UI_HW_19/Images/AmazonSmile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:transparent;
+}
+
+.tab-border1{
+    background-image:url("../UX_UI_HW_19/Images/Donate.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    color:transparent;
+}
+
+.tab-border2{
+    background-image:url("../UX_UI_HW_19/Images/Volunteer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:transparent;
+}
+
+.drop::after {
+    content:'\25be';
+    transform: scale(1.5);
+    margin-left: 10px;
+    color: white;
 }
 
 
@@ -97,6 +184,7 @@ h4{
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
+    outline: none;
 }
 
 .columnRight input::placeholder{
@@ -105,15 +193,14 @@ h4{
 
 .container h1{
     float: center;
-    width:50%;
-    padding: 15px;
+    width:100%;
+    padding: 0px;
     height: auto;
 }
 
 h1{
     float: center;
-    width:100%;
-    padding: 15px;
+    width:400px;
     height: auto;
 }
 
@@ -124,39 +211,75 @@ h1{
     margin: 0px;
 }
 
-.navbar ul{
-    flex:1;
-    padding: 10px;
-    list-style: none;
-    text-decoration: bold;
-}
-
-.navbar li{
-    width: 100%;
-    flex:1;
-    display: inline;
-    padding: 21px;
-    margin: 25px;
-}
-
 .flex{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
 .navbar a{
-    display: inline;
+    display: inline-block;
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .navbar a:hover {
     background-color: #c23b3b;
 }
+
+.drop:hover, .drop1:hover{
+    background-color: #c23b3b;
+}
+
+
+/* Drop Button */
+.drop {
+    background-color: #074a7b;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 14px;
+  }
+
+.drop1 {
+    background-color: #074a7b;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #074a7b;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+
 #hero {
-    background-image: url(Images/Hero.png);
+    background-image: url(Images/Hands.png);
     background-size: 1450px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -173,7 +296,7 @@ h1{
 }
 
 .getInvolvedContainer {
-    width: 275px;
+    width: 100%;
 }
 
 .flexContainer{
@@ -189,14 +312,17 @@ h1{
 }
 
 .box1{
+    margin-top: 50px;
     width:20%;
 }
 
 .box2{
+    margin-top: 50px;
     width:20%;
 }
 
 .box3{
+    margin-top: 50px;
     width:20%;
 }
 .container h5::before{
@@ -206,7 +332,7 @@ h1{
     width: 520px;
     height:5px;
     left: 70px;
-    top: 1770px;
+    top: 1400px;
     position: absolute;
 }
 
@@ -217,7 +343,7 @@ h1{
     width: 520px;
     height:5px;
     right: 70px;
-    top: 1770px;
+    top: 1400px;
     position: absolute;
 }
 h5{
@@ -260,7 +386,7 @@ h2{
 }
 
 h3{
-    text-decoration: none;
+    text-decoration: underline;
     margin-left: 10px;
 }
 
@@ -300,7 +426,7 @@ h3{
     width: 520px;
     height:5px;
     left: 70px;
-    top: 2660px;
+    top: 2340px;
     position: absolute;
 }
 
@@ -311,7 +437,7 @@ h3{
     width: 520px;
     height:5px;
     right: 70px;
-    top: 2660px;
+    top: 2340px;
     position: absolute;
 }
 
@@ -361,6 +487,17 @@ h3{
     border-radius: 8px;
 }
 
+.button:hover{
+    background-color: #074a7b;
+    color: white;
+    text-align:center;
+    font-size:16px;
+    border:none;
+    padding: 15px 32px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
 
 .button a{
     color: #FFF;
@@ -372,6 +509,8 @@ h3{
     text-align:center;
     grid-template-columns: 1fr;
     width: 10%;
+    border-style:solid;
+    border-color: #074a7b;
 }
 
 .survivors {
@@ -384,6 +523,8 @@ h3{
     text-align:center;
     grid-template-columns: 1fr;
     width: 10%;
+    border-style:solid;
+    border-color: #074a7b;
 }
 
 .juvenileResize{
@@ -432,7 +573,8 @@ h3{
 
 .TWF {
     width: 100%;
-    height: 390px;
+    height: 369px;
+    border-style: solid;
 }
 .buttonContainer{
     display:flex;
@@ -441,6 +583,18 @@ h3{
 }
 .buttonRead{
     background-color: #c23b3b;
+    color: white;
+    text-align:center;
+    font-size:16px;
+    border:none;
+    padding: 15px 38px;
+    display: inline-block;
+    border-radius: 8px;
+    vertical-align: middle;
+    position: relative;
+}
+.buttonRead:hover{
+    background-color: #074a7b;
     color: white;
     text-align:center;
     font-size:16px;
@@ -472,6 +626,10 @@ h3{
 .side2{
     color: #000;
     padding: none;
+}
+
+.side2 img{
+    height:367px;
 }
 
 .container3 a{
