@@ -51,7 +51,7 @@
         text-align: center;
     }
 
-    .container h5{
+    .container h5, .container2 h5{
         display:none;
     }
 }
