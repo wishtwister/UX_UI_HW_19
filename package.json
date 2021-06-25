@@ -1,0 +1,23 @@
+{
+  "name": "UX_UI_HW_19",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wishtwister/UX_UI_HW_19.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wishtwister/UX_UI_HW_19/issues"
+  },
+  "homepage": "https://wishtwister.github.io/UX_UI_HW_19",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
