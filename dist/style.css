@@ -109,21 +109,21 @@
 
 
 .tab-border{
-    background-image:url("../UX_UI_HW_19/Images/AmazonSmile.png");
+    background-image:url("../dist/Images/AmazonSmile.png");
     background-repeat: no-repeat;
     background-size: cover;
     color:transparent;
 }
 
 .tab-border1{
-    background-image:url("../UX_UI_HW_19/Images/Donate.png");
+    background-image:url("../dist/Images/Donate.png");
     background-repeat: no-repeat;
     background-size: contain;
     color:transparent;
 }
 
 .tab-border2{
-    background-image:url("../UX_UI_HW_19/Images/Volunteer.png");
+    background-image:url("../dist/Images/Volunteer.png");
     background-repeat: no-repeat;
     background-size: cover;
     color:transparent;
