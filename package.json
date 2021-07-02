@@ -1,7 +1,6 @@
 {
-  "name": "UX_UI_HW_19",
+  "name": "ux_ui_hw_19",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "gh-pages": "^3.2.3"
@@ -20,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/wishtwister/UX_UI_HW_19/issues"
   },
-  "homepage": "https://wishtwister.github.io/UX_UI_HW_19/"
+  "homepage": "https://wishtwister.github.io/UX_UI_HW_19/",
+  "description": ""
 }
