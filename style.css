@@ -206,7 +206,7 @@ h1{
 
 .navbar{
     background-color: #074a7b;
-    height:80px;
+    height:100px;
     padding:1px;
     margin: 0px;
 }
@@ -658,6 +658,15 @@ footer{
 
 .footer3{
     flex: 1;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    text-decoration: none;
+    color: white;
 }
 
 .flexContainer4{
